@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11526CD0-78EF-4265-AA3F-049DE300075F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Playground</RootNamespace>
+    <AssemblyName>Playground</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StudyCases\CapturedVariablesOnClosureInLambdas.cs" />
+    <Compile Include="StudyCases\CrossAppDomainCommunication.cs" />
+    <Compile Include="StudyCases\ForeachVsParallelForeach.cs" />
+    <Compile Include="StudyCases\LinqListMonad.cs" />
+    <Compile Include="StudyCases\RichterBoxingUnboxing.cs" />
+    <Compile Include="StudyCases\ClosureOnLambdasExpandLifetime.cs" />
+    <Compile Include="StudyCases\ExceptionOnThreadExperiment.cs" />
+    <Compile Include="StudyCases\AllAboutEquality.cs" />
+    <Compile Include="StudyCases\AppDomainCreateAndUnwrap.cs" />
+    <Compile Include="StudyCases\BitwisBinaryeOrVsConditionalOr.cs" />
+    <Compile Include="StudyCases\ClosureVariablesNotOnValuesInLambdas.cs" />
+    <Compile Include="StudyCases\ClosureOnLambdasExpandLifetime2.cs" />
+    <Compile Include="StudyCases\DelegatesCombining.cs" />
+    <Compile Include="StudyCases\DisposeOrderInUsing.cs" />
+    <Compile Include="StudyCases\EnumerableInterfaceYieldKeyword.cs" />
+    <Compile Include="StudyCases\ExceptionHandling.cs" />
+    <Compile Include="StudyCases\ExplicitInterface.cs" />
+    <Compile Include="StudyCases\StringInterningnRefComparision.cs" />
+    <Compile Include="StudyCases\NullableTypes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudyCases\StringInterningUnderstandInternPool.cs" />
+    <Compile Include="StudyCases\VolatileIsNotEnoughUseThreadBarrier.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
