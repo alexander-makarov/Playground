@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="StudyCases\CapturedVariablesOnClosureInLambdas.cs" />
+    <Compile Include="StudyCases\CSharp60Features.cs" />
     <Compile Include="StudyCases\CrossAppDomainCommunication.cs" />
     <Compile Include="StudyCases\ForeachVsParallelForeach.cs" />
     <Compile Include="StudyCases\LinqListMonad.cs" />

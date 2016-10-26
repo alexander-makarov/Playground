@@ -30,7 +30,7 @@
             //          Multithreading:
             //ExceptionOnThreadExperiment.RunAndExplore();
             //VolatileIsNotEnoughUseThreadBarrierExperiment.RunAndExplore();
-            ForeachVsParallelForeach.RunAndExplore(false);
+            //ForeachVsParallelForeach.RunAndExplore(false);
             //ForeachVsParallelForeach.RunAndExplore(true);
 
             //          Cross-process Communication (when threads are not enough)
@@ -45,6 +45,7 @@
 
             //          Misc:
             //LinqListMonad.RunAndExplore();
+            CSharp60Features.RunAndExplore();
         }
     }
 }
